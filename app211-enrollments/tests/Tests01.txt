@@ -1,11 +1,10 @@
-Course computing = new Course("BT1C1G1", "Bsc Computing");
-Course computing = new Course("BT1CTG1", "BSc Computing");
+Course computing = new Course("BT1GDV1", "BSc Computing");
 computing.print();
  --------------------------------
    App211: Course Details
  --------------------------------
 
- Course Code: BT1CTG1: BSc Computing
+ Course Code: BT1GDV1: BSc Computing
 
 Student student1 = new Student("Max Goodwin", 22045446);
 student1.print();
@@ -16,5 +15,5 @@ student1.printCourse();
    App211: Course Details
  --------------------------------
 
- Course Code: BT1CTG1: BSc Computing
+ Course Code: BT1GDV1: BSc Computing
 
