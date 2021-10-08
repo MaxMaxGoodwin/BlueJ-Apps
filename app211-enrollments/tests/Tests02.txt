@@ -1,0 +1,48 @@
+Module module1 = new Module();
+Course course1 = new Course("computing", "BSc Computing");
+Module module2 = new Module();
+module2.getModCode("CO452");
+module2.getTitle("Programming Concepts");
+module2.printModule();
+ --------------------------------
+   Module Details:
+ --------------------------------
+
+Title: Programming Concepts
+Code: CO452
+Credit Value: 0
+Module Credit: 0
+ --------------------------------
+module2.setModCred(15);
+module2.printModule();
+ --------------------------------
+   Module Details:
+ --------------------------------
+
+Title: Programming Concepts
+Code: CO452
+Credit Value: 0
+Module Credit: 15
+ --------------------------------
+course1.printDetails();
+ --------------------------------
+   App211: Course Details
+ --------------------------------
+
+Course Code: computing
+Course Title: BSc Computing
+
+    Exception occurred.
+course1.addModule(module2);
+course1.printDetails();
+ --------------------------------
+   App211: Course Details
+ --------------------------------
+
+Course Code: computing
+Course Title: BSc Computing
+
+Module Code: CO452
+Module Title: Programming Concepts
+Module Credit Value: 0
+Module Credit: 15
