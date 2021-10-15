@@ -9,7 +9,7 @@
 //Defines class for Module
 public class Module
 {
-    //Assigns a variable for module code as an integer
+    //Assigns a variable for module code as an integer 
     public String moduleCode;
     
     //Assigns a variable for module title as a string
@@ -40,7 +40,7 @@ public class Module
     }
     
     //Method which asks for user input to get value of module credit
-    public void setModCred(int modCredit)
+    public void getModCred(int modCredit)
     {
         this.modCredit = modCredit;
     }

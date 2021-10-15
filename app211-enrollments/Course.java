@@ -19,7 +19,7 @@ public class Course
     
     /**
      * Create a Course with a maximum number of enrolments. 
-     * All other details are set to unkown values.
+     * All other details are set to unknown values.
      */
     //Asks for user to input course code and title when creating new object
     public Course(String code, String title)

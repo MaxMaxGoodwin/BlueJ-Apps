@@ -54,10 +54,9 @@ public class Student
         System.out.println(" Student ID: " + id + " Name: " + name);
     }
     
-    
+    //Prints out the course details
     public void printCourse()
     {
-        //Error with course.print(); had to be fixed ?
         System.out.println(course);
     }
 }
