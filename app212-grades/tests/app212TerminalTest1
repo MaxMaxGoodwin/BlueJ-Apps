@@ -1,0 +1,32 @@
+Student maxGoodwin = new Student();
+maxGoodwin.print();
+ Student ID: 100156381, Max Goodwin
+Course gamesDevelopment = new Course();
+maxGoodwin.enrol(gamesDevelopment);
+maxGoodwin.printCourse();
+ Student ID: 100156381, Max Goodwin
+
+ Course BT1GDV1: Games Development
+Module co452 = new Module("CO452", "Programming Concepts");
+gamesDevelopment.addModule(co452);
+ModuleMark maxCo452Mark = new ModuleMark(co452);
+maxCo452Mark.setMark(90);
+maxGoodwin.addMark(maxCo452Mark);
+maxGoodwin.printTranscript();
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by student name
+ ------------------------------------
+ Student ID: 100156381, Max Goodwin
+
+ Course BT1GDV1: Games Development
+
+ CO452: 	Programming Concepts	  15 credits
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+ CO452: 	Programming Concepts	  15	90
+
+ No Final Course Grade Yet!
