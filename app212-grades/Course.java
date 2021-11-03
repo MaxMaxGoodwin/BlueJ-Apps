@@ -4,7 +4,7 @@ import java.util.ArrayList;
  * that enrolled students may want to complete
  *
  * @author Derek Peacock and Nicholas Day
- * @version 0.1 11/Sep/2020
+ * @version 2.0   3/11/2021
  */
 public class Course
 {
@@ -43,7 +43,14 @@ public class Course
      */
     public void createModules()
     {
-
+        Module co450 = new Module ("CO450", "Computer Architecture");
+        Module co452 = new Module ("CO452", "Programming Concepts");
+        Module co459 = new Module ("CO459", "Game Design\t");
+        Module co461 = new Module ("CO461", "3D Modelling\t");
+        addModule(co450);
+        addModule(co452);
+        addModule(co459);
+        addModule(co461);
     }
     
     public void addModule(Module module)
@@ -59,7 +66,18 @@ public class Course
      */
     public Grades convertToGrade(int mark)
     {
-        return Grades.NS;
+        if(mark >= 0 && mark <= 39)
+            return Grades.F;  
+        else if(mark <= 49)
+            return Grades.D;  
+        else if(mark <= 59)
+            return Grades.C;  
+        else if(mark <= 69)
+            return Grades.B;
+        else if(mark <= 100)
+            return Grades.A;   
+        else
+            return Grades.NS;
     }
     
     /**
@@ -68,7 +86,18 @@ public class Course
      */
     public Grades calculateGrade(ArrayList<ModuleMark> marks)
     {
-        return Grades.NS;
+        int total = 0;
+        int finalMark = 0;
+        
+        for(ModuleMark mark : marks)
+        {
+            total = total + mark.getValue();
+        }
+        
+        finalMark = total / MAXN_MODULES;
+        finalGrade = convertToGrade(finalMark);
+        
+        return finalGrade;
     }
     
     /**
