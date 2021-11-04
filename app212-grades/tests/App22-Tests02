@@ -1,0 +1,31 @@
+Student max = new Student();
+Course gamesDevelopment = new Course();
+max.enrol(gamesDevelopment);
+max.printTranscript();
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by student name
+ ------------------------------------
+ Student ID: 100156381, Max Goodwin
+
+ Course BT1GDV1: Games Development
+
+ CO450: Computer Architecture	  15 credits
+ CO452: Programming Concepts	  15 credits
+ CO459: Game Design		  15 credits
+ CO461: 3D Modelling		  15 credits
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+ CO450: Computer Architecture	  15	96	A
+
+ CO452: Programming Concepts	  15	85	A
+
+ CO459: Game Design		  15	85	A
+
+ CO461: 3D Modelling		  15	82	A
+
+
+ Final Course Grade = A

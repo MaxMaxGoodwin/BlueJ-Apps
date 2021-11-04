@@ -5,8 +5,8 @@ import java.util.Random;
  * It holds the student details relevant in our context.
  * 
  * @author Michael Kölling and David Barnes
- * Modified by Derek Peacock & Nicholas Day
- * @version 2.0   3/11/2021
+ * Modified by Max Goodwin 100156381/22045446
+ * @version 3.0   4/11/2021
  */
 public class Student
 {
@@ -19,7 +19,10 @@ public class Student
     // The marks awarded for the modules on the course
     private ArrayList<ModuleMark> marks;
     
+    //private ArrayList<Course> studentNames;
+    
     private Random randomMark;
+    
     
     /**
      * This constructor creates a new student with a
@@ -61,7 +64,9 @@ public class Student
     public void enrol(Course course)
     {
         this.course = course;
+        //this.studentName = Student.name;
         awardTestMarks();
+        //studentName = new ArrayList<Course>();
     }
     
     /**

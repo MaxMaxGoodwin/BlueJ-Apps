@@ -4,7 +4,7 @@ import java.util.ArrayList;
  * that enrolled students may want to complete
  *
  * @author Derek Peacock and Nicholas Day
- * @version 2.0   3/11/2021
+ * @version 3.0   4/11/2021
  */
 public class Course
 {
@@ -35,7 +35,15 @@ public class Course
         
         createModules();
     }
-
+    
+    /**public void getEnrolList(Student name)
+    {
+        this.print();
+        name.print();  
+    }
+    */
+   
+   
     /**
      * Create four modules and add them to the
      * modules list for testing purposes.  These
