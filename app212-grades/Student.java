@@ -13,7 +13,7 @@ public class Student
     // the student ID
     private int id;
     // the student's full name
-    private String name;
+    public String name;
     // The course the student is enrolled on
     private Course course;
     // The marks awarded for the modules on the course
@@ -68,6 +68,9 @@ public class Student
         awardTestMarks();
         //studentName = new ArrayList<Course>();
     }
+    
+    
+    
     
     /**
      * Award a different pass mark for each of the

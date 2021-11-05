@@ -36,12 +36,20 @@ public class Course
         createModules();
     }
     
-    /**public void getEnrolList(Student name)
+    /**
+    public void getEnrolList(Student student)
     {
-        this.print();
-        name.print();  
+        for(Student name: student)
+        {
+            this.print(name);
+            //student.print(name);
+        }
     }
-    */
+    
+    public void print()
+    {
+        System.out.println(
+    }*/
    
    
     /**
@@ -106,6 +114,11 @@ public class Course
         finalGrade = convertToGrade(finalMark);
         
         return finalGrade;
+    }
+    
+    public void printCourseGrade()
+    {
+        System.out.println("Final Course Grade: " + finalGrade);
     }
     
     /**
