@@ -6,7 +6,7 @@ import java.util.Random;
  * 
  * @author Michael Kölling and David Barnes
  * Modified by Max Goodwin 100156381/22045446
- * @version 3.0   4/11/2021
+ * @version 4.0   5/11/2021
  */
 public class Student
 {

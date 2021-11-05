@@ -4,7 +4,7 @@ import java.util.ArrayList;
  * that enrolled students may want to complete
  *
  * @author Derek Peacock and Nicholas Day
- * @version 3.0   4/11/2021
+ * @version 4.0   5/11/2021
  */
 public class Course
 {
@@ -16,6 +16,8 @@ public class Course
     private String title;
     
     private Grades finalGrade;
+    
+    public String enrolList;
      
     public Course()
     {
@@ -36,21 +38,13 @@ public class Course
         createModules();
     }
     
-    /**
-    public void getEnrolList(Student student)
+    //Method to print list of enrolled students on course
+    /**public void printEnrolList()
     {
-        for(Student name: student)
-        {
-            this.print(name);
-            //student.print(name);
-        }
-    }
-    
-    public void print()
-    {
-        System.out.println(
-    }*/
-   
+        this.print();
+        print.Student();
+        
+    }*/ 
    
     /**
      * Create four modules and add them to the
