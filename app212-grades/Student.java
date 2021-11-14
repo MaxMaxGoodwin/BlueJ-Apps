@@ -44,6 +44,10 @@ public class Student
         marks = new ArrayList<ModuleMark>();
     }
 
+    /**
+     * Method to assign/add a module mark
+     * to a student enrolled on a course with modules.
+     */
     public void addMark(ModuleMark mark)
     {
         marks.add(mark);
@@ -114,12 +118,20 @@ public class Student
         System.out.println(" Student ID: " + id + ", " + name);
     }
     
+    /**
+     * Method to print out course details.
+     */
     public void printCourse()
     {
         this.print();
         course.print();
     }
     
+    /**
+     * Method to print out the modules and 
+     * module marks of each student for a course
+     * after converting them to grades.
+     */
     private void printModules()
     {
         for(ModuleMark mark: marks)
@@ -130,6 +142,11 @@ public class Student
 
     }
     
+    /**
+     * A method that prints out the 
+     * transcript(all details) of a student in
+     * a neat table.
+     */
     public void printTranscript()
     {
         System.out.println(" ------------------------------------");

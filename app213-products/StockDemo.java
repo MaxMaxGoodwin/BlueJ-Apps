@@ -4,8 +4,8 @@
  * The demonstration becomes properly functional as
  * the StockManager class is completed.
  * 
- * @author David J. Barnes and Michael Kölling.
- * @version 2016.02.29
+ * @author Max Goodwin
+ * @version V1.0  14/11/2021
  */
 public class StockDemo
 {
@@ -23,9 +23,16 @@ public class StockDemo
         // Add at least 10 products, they must be unique to you
         // Make sure the ids are sequential numbers
         
-        stock.add(new Product(101, "Samsung Galaxy S20"));
-        stock.add(new Product(102, "Apple iPhone 12"));
-        stock.add(new Product(103, "Google Pixel 4A"));
+        stock.add(new Product(660, "Halo: Combat Evolved"));
+        stock.add(new Product(661, "Halo 1"));
+        stock.add(new Product(662, "Halo 2"));
+        stock.add(new Product(663, "Halo 3"));
+        stock.add(new Product(664, "Farcry 3"));
+        stock.add(new Product(665, "Skyrim"));
+        stock.add(new Product(666, "Elden Ring"));
+        stock.add(new Product(667, "Halo Infinite"));
+        stock.add(new Product(668, "Farcry 6"));
+        stock.add(new Product(669, "Assasin's Creed Valhalla"));
     }
     
     /**
@@ -50,9 +57,11 @@ public class StockDemo
     
     private void buyProducts()
     {
+        stock.buyProduct(660, 500);
     }
 
     private void sellProducts()
     {
+        
     }    
 }

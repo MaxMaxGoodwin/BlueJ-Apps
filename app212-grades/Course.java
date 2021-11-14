@@ -19,6 +19,9 @@ public class Course
     
     public String enrolList;
      
+    /** A quick way to assign a
+     * course for testing purposes.
+     */
     public Course()
     {
         this("BT1GDV1", "Games Development");
@@ -38,13 +41,16 @@ public class Course
         createModules();
     }
     
-    //Method to print list of enrolled students on course
-    /**public void printEnrolList()
+    /** Method to print the list of
+     * enrolled students on a course
+     * for testing and practical purposes (doesn't work).
+     */
+    /**public void printEnrolList(Course course)
     {
         this.print();
-        print.Student();
+        course.print();
         
-    }*/ 
+    }*/
    
     /**
      * Create four modules and add them to the
@@ -63,6 +69,10 @@ public class Course
         addModule(co461);
     }
     
+    /** Adds a module and
+     * checks whether that increment has
+     * exceeded the max number.
+     */
     public void addModule(Module module)
     {
         if(modules.size() < MAXN_MODULES)
@@ -71,8 +81,9 @@ public class Course
         }
     }
     
-    /**
-     * 
+    /**Calculates the grade based on
+     *the mark of each module for the
+     *course the student is enrolled on.
      */
     public Grades convertToGrade(int mark)
     {
@@ -110,6 +121,9 @@ public class Course
         return finalGrade;
     }
     
+    /**Prints the final course grade based
+     *on the finalGrade calculated above (calculateGrade)
+     */
     public void printCourseGrade()
     {
         System.out.println("Final Course Grade: " + finalGrade);
