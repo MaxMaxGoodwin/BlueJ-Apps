@@ -5,7 +5,7 @@
  * the StockManager class is completed.
  * 
  * @author Max Goodwin
- * @version V1.0  14/11/2021
+ * @version V2.0  17/11/2021
  */
 public class StockDemo
 {
@@ -16,9 +16,9 @@ public class StockDemo
      * Create a StockManager and populate it with at least
      * 10 sample products.
      */
-    public StockDemo(StockList stock)
+    public StockDemo()
     {
-        this.stock = stock;
+        this.stock = new StockList();
         
         // Add at least 10 products, they must be unique to you
         // Make sure the ids are sequential numbers
@@ -33,6 +33,8 @@ public class StockDemo
         stock.add(new Product(667, "Halo Infinite"));
         stock.add(new Product(668, "Farcry 6"));
         stock.add(new Product(669, "Assasin's Creed Valhalla"));
+        
+        runDemo();
     }
     
     /**
@@ -62,6 +64,6 @@ public class StockDemo
 
     private void sellProducts()
     {
-        
+        stock.sellProduct(660, 150);
     }    
 }

@@ -1,0 +1,24 @@
+Product callOfDuty = new Product(111, "Call of Duty");
+callOfDuty.print();
+ ID 111: Call of Duty stock level: 0
+callOfDuty.decreaseQuantity(5);
+callOfDuty.print();
+ ID 111: Call of Duty stock level: 0
+callOfDuty.increaseQuantity(10);
+callOfDuty.print();
+ ID 111: Call of Duty stock level: 10
+callOfDuty.decreaseQuantity(6);
+callOfDuty.print();
+ ID 111: Call of Duty stock level: 4
+Product fortnite = new Product(112, "Fortnite");
+StockList stockList1 = new StockList();
+stockList1.add(fortnite);
+stockList1.add(callOfDuty);
+stockList1.print();
+
+ Max's Stock List
+ ====================
+
+ ID 112: Fortnite stock level: 0
+ ID 111: Call of Duty stock level: 4
+

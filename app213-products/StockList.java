@@ -5,7 +5,7 @@ import java.util.ArrayList;
  * The stock is described by zero or more Products.
  * 
  * @author Max Goodwin
- * @version V1.0  14/11/2021
+ * @version V2.0  17/11/2021
  */
 public class StockList
 {
@@ -47,11 +47,27 @@ public class StockList
     public void buyProduct(int productID, int amount)
     {
         Product product = findProduct(productID);
-        if(product != null)
-            product.increaseQuantity(amount);
+        if(product != null) 
+        {
+            if(product.getQuantity() < 500)
+            {
+                product.increaseQuantity(amount);
+                System.out.println("Successfully bought " + amount + 
+                                        " of" + product.getName());
+            }
+            else
+            {
+                System.out.println("Not enough storage space for: "
+                     + product.getName() + " - Please sell current stock");
+                                            
+            }
+        }
         else
+        {
             System.out.println("Couldn't find product");
-    }
+        }
+    } 
+
     
     /**
      * Find a product to match the product id,
@@ -67,7 +83,6 @@ public class StockList
         return null;
     }
     
-    
     /**
      * Sell one of the given product.
      * Show the before and after status of the product.
@@ -75,24 +90,40 @@ public class StockList
      */
     public void sellProduct(int productID)
     {
+        sellProduct(productID, 1);
+    }
+    
+    /**
+     * Sell multiple of the given product.
+     * Show the before and after status of the product.
+     * @param id The ID of the product being sold.
+     */
+    public void sellProduct(int productID, int amount)
+    {
         Product product = findProduct(productID);
         
         if(product != null) 
         {
-            if(product.getQuantity() > 0)
+            if(product.getQuantity() > 0 && product.getQuantity() > amount)
             {
-                product.decreaseQuantity(1);
-                
-                // printout message
+                product.decreaseQuantity(amount);
+                System.out.println("Successfully sold " + amount + 
+                                        " of "+ product.getName());
+            }
+            else if(product.getQuantity() == 0)
+            {
+                System.out.println("The product" + product.getName() +
+                                            "is out of stock");
             }
             else
             {
-                // printout message
+                System.out.println("Can't sell " + amount +" of " + product.getName() 
+                + "- only " + product.getQuantity() + " in stock");
             }
         }
         else
         {
-            // printout message
+            System.out.println("Couldn't find product");
         }
     }    
 
