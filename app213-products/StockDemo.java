@@ -1,16 +1,18 @@
-
+import java.util.Random;
 /**
  * Demonstrate the StockManager and Product classes.
  * The demonstration becomes properly functional as
  * the StockManager class is completed.
  * 
  * @author Max Goodwin
- * @version V2.0  17/11/2021
+ * @version V3.0  18/11/2021
  */
 public class StockDemo
 {
     // The stock manager.
     private StockList stock;
+    
+    private Random random;
 
     /**
      * Create a StockManager and populate it with at least
@@ -19,7 +21,7 @@ public class StockDemo
     public StockDemo()
     {
         this.stock = new StockList();
-        
+        this.random = new Random();
         // Add at least 10 products, they must be unique to you
         // Make sure the ids are sequential numbers
         
@@ -59,11 +61,13 @@ public class StockDemo
     
     private void buyProducts()
     {
-        stock.buyProduct(660, 500);
+        for(int id = 660; id <= 669; id++)
+            stock.buyProduct(id, random.nextInt(501));
     }
 
     private void sellProducts()
     {
-        stock.sellProduct(660, 150);
+        for(int id = 660; id <= 669; id++)
+            stock.sellProduct(id, random.nextInt(501));
     }    
 }

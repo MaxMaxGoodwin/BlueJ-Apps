@@ -2,7 +2,7 @@
  * Model some details of a product sold by a company.
  * 
  * @author Max Goodwin
- * @version V2.0  17/11/2021
+ * @version V3.0  18/11/2021
  */
 public class Product
 {

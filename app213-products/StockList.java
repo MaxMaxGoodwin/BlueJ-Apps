@@ -5,7 +5,7 @@ import java.util.ArrayList;
  * The stock is described by zero or more Products.
  * 
  * @author Max Goodwin
- * @version V2.0  17/11/2021
+ * @version V3.0  18/11/2021
  */
 public class StockList
 {
@@ -53,7 +53,7 @@ public class StockList
             {
                 product.increaseQuantity(amount);
                 System.out.println("Successfully bought " + amount + 
-                                        " of" + product.getName());
+                                        " of " + product.getName());
             }
             else
             {
@@ -127,6 +127,55 @@ public class StockList
         }
     }    
 
+    /**
+     * Method to remove a product from stock list.
+     */
+    public void removeProduct(int productID)
+    {
+        Product product = findProduct(productID);
+        
+        if(product != null)
+        {
+            stock.remove(product);
+            System.out.println("Product " + productID + " has been removed");
+        }   
+        else
+        {
+            System.out.println("Couldn't find product");
+        }
+        
+    }
+    
+    /**
+    public void restockLow(int lowStock)
+    {
+        ArrayList<Product> minStock = printLowStock(lowStock);
+        System.out.println("Restocking products...");
+        
+        for(Product product : minStock)
+        {
+            product.increaseQuantity(lowStock - product.getQuantity());
+        }
+    }
+    
+    public void printLowStock(int lowStock)
+    {
+        ArrayList<Product> minStock = new ArrayList<Product>();
+        int increaseBy = 0;
+        System.out.println("These products are at a low stock: ");
+        for(Product product : stock)
+        {
+            if(product.getQuantity() <= lowStock)
+            {
+                increaseBy++;
+                minStock.add(product);
+                System.out.println(product);
+            }
+        }
+        
+        return lowStock;
+    }
+    */
     
     /**
      * Locate a product with the given ID, and return how
