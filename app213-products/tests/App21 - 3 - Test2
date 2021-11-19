@@ -1,0 +1,81 @@
+StockList stockList = new StockList();
+StockDemo stockDemo = new StockDemo();
+
+ Max's Stock List
+ ====================
+
+ ID 660: Halo: Combat Evolved stock level: 0
+ ID 661: Halo 1 stock level: 0
+ ID 662: Halo 2 stock level: 0
+ ID 663: Halo 3 stock level: 0
+ ID 664: Farcry 3 stock level: 0
+ ID 665: Skyrim stock level: 0
+ ID 666: Elden Ring stock level: 0
+ ID 667: Halo Infinite stock level: 0
+ ID 668: Farcry 6 stock level: 0
+ ID 669: Assasin's Creed Valhalla stock level: 0
+
+Successfully bought 471 of Halo: Combat Evolved
+Successfully bought 42 of Halo 1
+Successfully bought 48 of Halo 2
+Successfully bought 425 of Halo 3
+Successfully bought 290 of Farcry 3
+Successfully bought 356 of Skyrim
+Successfully bought 390 of Elden Ring
+Successfully bought 101 of Halo Infinite
+Successfully bought 72 of Farcry 6
+Successfully bought 295 of Assasin's Creed Valhalla
+
+ Max's Stock List
+ ====================
+
+ ID 660: Halo: Combat Evolved stock level: 471
+ ID 661: Halo 1 stock level: 42
+ ID 662: Halo 2 stock level: 48
+ ID 663: Halo 3 stock level: 425
+ ID 664: Farcry 3 stock level: 290
+ ID 665: Skyrim stock level: 356
+ ID 666: Elden Ring stock level: 390
+ ID 667: Halo Infinite stock level: 101
+ ID 668: Farcry 6 stock level: 72
+ ID 669: Assasin's Creed Valhalla stock level: 295
+
+Successfully sold 456 of Halo: Combat Evolved
+Can't sell 305 of Halo 1- only 42 in stock
+Can't sell 483 of Halo 2- only 48 in stock
+Successfully sold 324 of Halo 3
+Successfully sold 15 of Farcry 3
+Successfully sold 196 of Skyrim
+Successfully sold 254 of Elden Ring
+Can't sell 344 of Halo Infinite- only 101 in stock
+Can't sell 245 of Farcry 6- only 72 in stock
+Successfully sold 140 of Assasin's Creed Valhalla
+
+ Max's Stock List
+ ====================
+
+ ID 660: Halo: Combat Evolved stock level: 15
+ ID 661: Halo 1 stock level: 42
+ ID 662: Halo 2 stock level: 48
+ ID 663: Halo 3 stock level: 101
+ ID 664: Farcry 3 stock level: 275
+ ID 665: Skyrim stock level: 160
+ ID 666: Elden Ring stock level: 136
+ ID 667: Halo Infinite stock level: 101
+ ID 668: Farcry 6 stock level: 72
+ ID 669: Assasin's Creed Valhalla stock level: 155
+
+Product watchDogs = new Product(670, "Watch Dogs");
+Product gearsOfWar = new Product(671, "Gears of War");
+stockList.add(watchDogs);
+stockList.add(gearsOfWar);
+stockList.removeProduct(670);
+Product 670 has been removed
+stockList.searchProduct("Gears");
+Searching for products with term: 'Gears'
+There are 1 products containing term
+ ID 671: Gears of War stock level: 0
+stockList.printLowStock(5);
+These products are at a low stock: 
+ ID 671: Gears of War stock level: 0
+There are 1 products at a low stock

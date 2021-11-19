@@ -5,7 +5,7 @@ import java.util.ArrayList;
  * The stock is described by zero or more Products.
  * 
  * @author Max Goodwin
- * @version V3.0  18/11/2021
+ * @version V4.0  19/11/2021
  */
 public class StockList
 {
@@ -128,6 +128,30 @@ public class StockList
     }    
 
     /**
+     * A method to search a particular term/phrase in all products.
+     */
+    public void searchProduct(String productPhrase)
+    {
+        int count = 0;
+        System.out.println("Searching for products with term: '" + productPhrase + "'");
+        
+        for (Product product : stock) 
+            if(product.getName().contains(productPhrase))
+            {
+                count++;
+                System.out.println("There are " + count + " products containing term");
+                System.out.println(product);
+            }
+            else
+            {
+                System.out.println("No products found containing search term");
+            }
+        
+        
+    }
+    
+    
+    /**
      * Method to remove a product from stock list.
      */
     public void removeProduct(int productID)
@@ -147,35 +171,46 @@ public class StockList
     }
     
     /**
-    public void restockLow(int lowStock)
+     * Method that asks user for a minimum stock then checks all stock levels
+     * to see which products are below minimum and restocks them to minimum.
+    */
+    /**
+    public void restockLow(int minStock)
     {
-        ArrayList<Product> minStock = printLowStock(lowStock);
+        ArrayList<Product> lowStock = printLowStock(minStock);
         System.out.println("Restocking products...");
         
-        for(Product product : minStock)
+        for(Product product : lowStock)
         {
-            product.increaseQuantity(lowStock - product.getQuantity());
+            product.increaseQuantity(minimum - product.getQuantity());
         }
     }
-    
-    public void printLowStock(int lowStock)
+    */
+   
+   /**
+    * Method that asks user for a minimum then checks stock levels and prints
+    * the number of products below that stock level (doesn't restock).
+    */
+   public void printLowStock(int minStock)
     {
-        ArrayList<Product> minStock = new ArrayList<Product>();
-        int increaseBy = 0;
+        ArrayList<Product> lowStock = new ArrayList<Product>();
+        int count = 0;
         System.out.println("These products are at a low stock: ");
         for(Product product : stock)
         {
-            if(product.getQuantity() <= lowStock)
+            if(product.getQuantity() <= minStock)
             {
-                increaseBy++;
-                minStock.add(product);
+                //product.getID() = productID;
+                count++;
+                lowStock.add(product);
                 System.out.println(product);
             }
         }
         
-        return lowStock;
+        System.out.println("There are " + count + " products at a low stock");
+        //System.out.println("These products are: " + productID);
     }
-    */
+    
     
    
    
@@ -222,6 +257,9 @@ public class StockList
         System.out.println();
     }
     
+    /**
+     * Method to print a heading for stock list.
+     */
     public void printHeading()
     {
         System.out.println();
