@@ -20,7 +20,8 @@ public class StockApp
         reader = new InputReader();
         
         stock = new StockList();
-        StockDemo demo = new StockDemo();  //stock  ~ Fix
+        StockDemo demo = new StockDemo();//stock  ~ Fix
+        //demo.Test(stock);
     }
 
     /**
@@ -52,10 +53,26 @@ public class StockApp
         {
             stock.print();
         }
+        else if(choice.equals("add"))
+            addProduct();
         
         return false;
     }
    
+    private void addProduct()
+    {
+        System.out.println("Adding a new product");
+        System.out.println();
+        
+        int id = reader.getInt("Please enter a product id: ");
+        String name = reader.getString("Please enter a product name: ");
+        
+        Product product = new Product(id, name);
+        
+        stock.add(product);
+        stock.print();
+    }
+    
     /**
      * Print out a menu of operation choices
      */
