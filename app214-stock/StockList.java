@@ -5,7 +5,7 @@ import java.util.ArrayList;
  * The stock is described by zero or more Products.
  * 
  * @author Max Goodwin
- * @version V4.0  19/11/2021
+ * @version V2.0    02/12/2021
  */
 public class StockList
 {
@@ -15,7 +15,7 @@ public class StockList
     /**
      * Initialise the stock manager.
      */
-    public StockList()
+    public StockList() //{ stock - new ArrayList<Product>(); }
     {
         stock = new ArrayList<Product>();
     }
@@ -24,7 +24,7 @@ public class StockList
      * Add a product to the list.
      * @param item The product item to be added.
      */
-    public void add(Product item)
+    public void add(Product item) // { stock.add(item); }
     {
         stock.add(item);
     }
@@ -32,9 +32,9 @@ public class StockList
     /**
      * A method to buy a single quantity of the product
      */
-    public void buyProduct(int productID)
-    {
-        buyProduct(productID, 1);
+    public void buyProduct(int productID) // { buyProduct(productID, amount 1); }
+    { //, int amount)
+        buyProduct(productID, 1); //Product product = findProduct(productID);
     }
     
     

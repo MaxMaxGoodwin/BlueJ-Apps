@@ -3,7 +3,7 @@
  * Write a description of class Program here.
  *
  * @author (Max Goodwin)
- * @version v1.0   29/11/2021
+ * @version v2.0   02/12/2021
  */
 public class Program
 {

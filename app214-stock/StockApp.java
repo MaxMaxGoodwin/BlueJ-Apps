@@ -4,7 +4,7 @@
  * print and remove stock products
  *
  * @author Max Goodwin
- * @version v1.0   29/11/2021
+ * @version v2.0 02/12/2021
  */
 public class StockApp
 {
@@ -61,16 +61,15 @@ public class StockApp
    
     private void addProduct()
     {
-        System.out.println("Adding a new product");
-        System.out.println();
+        //System.out.println("Adding a new product");
+        //System.out.println();
         
         int id = reader.getInt("Please enter a product id: ");
         String name = reader.getString("Please enter a product name: ");
-        
         Product product = new Product(id, name);
-        
         stock.add(product);
-        stock.print();
+        System.out.println("Product " + product.getID()
+                + ", " + product.getName() + " has been added.");
     }
     
     /**
