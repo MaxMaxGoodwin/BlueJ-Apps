@@ -4,7 +4,7 @@
  * print and remove stock products
  *
  * @author Max Goodwin
- * @version v2.0 02/12/2021
+ * @version v3.0 03/12/2021
  */
 public class StockApp
 {
@@ -20,8 +20,7 @@ public class StockApp
         reader = new InputReader();
         
         stock = new StockList();
-        StockDemo demo = new StockDemo();//stock  ~ Fix
-        //demo.Test(stock);
+        StockDemo demo = new StockDemo(stock);
     }
 
     /**
@@ -42,7 +41,10 @@ public class StockApp
             finished = executeChoice(choice.toLowerCase());
         }
     }
-    
+
+    /**
+     * A method to execute the input of the user - quit/print/add
+     */
     private boolean executeChoice(String choice)
     {
         if(choice.equals("quit"))
@@ -59,6 +61,10 @@ public class StockApp
         return false;
     }
    
+    /**
+     * A method called in executeChoice that adds a new product to stock.
+     * Asks for a new ID + Name.
+     */
     private void addProduct()
     {
         //System.out.println("Adding a new product");

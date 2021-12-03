@@ -5,7 +5,7 @@ import java.util.ArrayList;
  * The stock is described by zero or more Products.
  * 
  * @author Max Goodwin
- * @version V2.0    02/12/2021
+ * @version V3.0    03/12/2021
  */
 public class StockList
 {

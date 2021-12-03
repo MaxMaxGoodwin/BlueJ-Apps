@@ -5,7 +5,7 @@ import java.util.Random;
  * the StockManager class is completed.
  * 
  * @author Max Goodwin
- * @version V2.0    02/12/2021
+ * @version V3.0    03/12/2021
  */
 public class StockDemo
 {
@@ -18,9 +18,9 @@ public class StockDemo
      * Create a StockManager and populate it with at least
      * 10 sample products.
      */
-    public StockDemo()
+    public StockDemo(StockList stock)
     {
-        this.stock = new StockList();
+        this.stock = stock;
         this.random = new Random();
         // Add at least 10 products, they must be unique to you
         // Make sure the ids are sequential numbers
