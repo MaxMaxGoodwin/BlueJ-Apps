@@ -5,14 +5,14 @@ package com.company;
  * print and remove stock products
  *
  * @author Max Goodwin
- * @version v3.0 03/12/2021
+ * @version v4.0 09/12/2021
  */
 public class StockApp
 {
     private InputReader reader;
     
     private StockList stock;
-    
+
     /**
      * Constructor for objects of class StockApp
      */
@@ -58,10 +58,21 @@ public class StockApp
         }
         else if(choice.equals("add"))
             addProduct();
+
+        else if(choice.equals("search"))
+            searchProduct();
+
+        else if(choice.equals("lowstock"));
+            printLowStock();
+
+        else if(choice.equals("restock"))
+            restockLow();
         
         return false;
     }
-   
+
+
+
     /**
      * A method called in executeChoice that adds a new product to stock.
      * Asks for a new ID + Name.
@@ -89,6 +100,9 @@ public class StockApp
         System.out.println("    Remove:     Remove an old product");
         System.out.println("    Print:      Print all products");
         System.out.println("    Quit:       Quit the program");
+        System.out.println("    Search:     Search for a product");
+        System.out.println("    LowStock:  Search for low stock products");
+        System.out.println("    Restock:    Restock a product");
         System.out.println();        
     }
     
