@@ -1,17 +1,18 @@
+ 
 /**
  * This app provides a user interface to the
  * stock manager so that users can add, edit,
  * print and remove stock products
  *
  * @author Max Goodwin
- * @version v3.0 03/12/2021
+ * @version v5.0 10/12/2021
  */
 public class StockApp
 {
     private InputReader reader;
     
     private StockList stock;
-    
+
     /**
      * Constructor for objects of class StockApp
      */
@@ -36,7 +37,7 @@ public class StockApp
             printHeading();
             printMenuChoices();
            
-            String choice = reader.getString("Please enter your choice > ");
+            String choice = reader.getString("Please enter your choice: ");
             
             finished = executeChoice(choice.toLowerCase());
         }
@@ -56,11 +57,51 @@ public class StockApp
             stock.print();
         }
         else if(choice.equals("add"))
+        {
             addProduct();
-        
+        }
+        else if(choice.equals("buy"))
+        {
+            int productID = reader.getInt("Enter a product ID: ");
+            int amount = reader.getInt("Enter an amount to buy: " );
+            stock.buyProduct(productID, amount);
+        }
+        else if(choice.equals("sell"))
+        {
+            int productID = reader.getInt("Enter a product ID to sell: ");
+            int amount = reader.getInt("Enter an amount to sell: ");
+            stock.sellProduct(productID, amount);
+        }
+        else if(choice.equals("remove"))
+        {
+            int productID = reader.getInt("Enter a productID here to remove: ");
+            stock.removeProduct(productID);
+        }
+
+        else if(choice.equals("search"))
+        {
+            String productPhrase = reader.getString("Enter a search string here: ");
+            stock.searchProduct(productPhrase);
+        }
+
+        else if(choice.equals("lowstock"))
+        {
+            int minStock = reader.getInt("Enter a minimum stock here: ");
+            stock.printLowStock(minStock);
+        }
+
+
+        else if(choice.equals("restock"))
+        {
+            int minStock = reader.getInt("Enter a minimum stock to restock here: ");
+            stock.restockLow(minStock);
+        }
+
         return false;
     }
-   
+
+
+
     /**
      * A method called in executeChoice that adds a new product to stock.
      * Asks for a new ID + Name.
@@ -85,8 +126,13 @@ public class StockApp
     {
         System.out.println();
         System.out.println("    Add:        Add a new product");
+        System.out.println("    Buy:        Buy an amount of a certain product");
+        System.out.println("    Sell:       Sell an amount of a certain product");
         System.out.println("    Remove:     Remove an old product");
         System.out.println("    Print:      Print all products");
+        System.out.println("    Search:     Search for a product");
+        System.out.println("    LowStock:   Search for low stock products");
+        System.out.println("    Restock:    Restock a product");
         System.out.println("    Quit:       Quit the program");
         System.out.println();        
     }
@@ -98,7 +144,7 @@ public class StockApp
     {
         System.out.println("********************************");
         System.out.println("  App21-04: Stock Application ");
-        System.out.println("      by Student Name");
+        System.out.println("      by Max Goodwin");
         System.out.println("********************************");
     }
 }

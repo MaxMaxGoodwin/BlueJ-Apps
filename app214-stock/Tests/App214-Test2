@@ -1,0 +1,199 @@
+ Max's Stock List
+ ====================
+
+ ID 660: Halo: Combat Evolved stock level: 247
+ ID 661: Halo 1 stock level: 496
+ ID 662: Halo 2 stock level: 0
+ ID 663: Halo 3 stock level: 471
+ ID 664: Farcry 3 stock level: 429
+ ID 665: Skyrim stock level: 160
+ ID 666: Elden Ring stock level: 172
+ ID 667: Halo Infinite stock level: 429
+ ID 668: Farcry 6 stock level: 395
+ ID 669: Assasin's Creed Valhalla stock level: 80
+
+Successfully sold 67 of Halo: Combat Evolved
+Successfully sold 199 of Halo 1
+The productHalo 2is out of stock
+Successfully sold 246 of Halo 3
+Can't sell 443 of Farcry 3 - only 429 in stock
+Can't sell 265 of Skyrim - only 160 in stock
+Can't sell 287 of Elden Ring - only 172 in stock
+Successfully sold 240 of Halo Infinite
+Successfully sold 36 of Farcry 6
+Can't sell 410 of Assasin's Creed Valhalla - only 80 in stock
+
+ Max's Stock List
+ ====================
+
+ ID 660: Halo: Combat Evolved stock level: 180
+ ID 661: Halo 1 stock level: 297
+ ID 662: Halo 2 stock level: 0
+ ID 663: Halo 3 stock level: 225
+ ID 664: Farcry 3 stock level: 429
+ ID 665: Skyrim stock level: 160
+ ID 666: Elden Ring stock level: 172
+ ID 667: Halo Infinite stock level: 189
+ ID 668: Farcry 6 stock level: 359
+ ID 669: Assasin's Creed Valhalla stock level: 80
+
+********************************
+  App21-04: Stock Application 
+      by Max Goodwin
+********************************
+
+    Add:        Add a new product
+    Buy:        Buy an amount of a certain product
+    Sell:       Sell an amount of a certain product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Search:     Search for a product
+    LowStock:   Search for low stock products
+    Restock:    Restock a product
+    Quit:       Quit the program
+
+Please enter your choice: buy
+Enter a product ID: 
+660
+Enter an amount to buy: 
+500
+Successfully bought 500 of Halo: Combat Evolved
+********************************
+  App21-04: Stock Application 
+      by Max Goodwin
+********************************
+
+    Add:        Add a new product
+    Buy:        Buy an amount of a certain product
+    Sell:       Sell an amount of a certain product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Search:     Search for a product
+    LowStock:   Search for low stock products
+    Restock:    Restock a product
+    Quit:       Quit the program
+
+Please enter your choice: 
+Your input is blank!
+
+Please enter your choice: sell
+Enter a product ID to sell: 
+660
+Enter an amount to sell: 
+450
+Successfully sold 450 of Halo: Combat Evolved
+********************************
+  App21-04: Stock Application 
+      by Max Goodwin
+********************************
+
+    Add:        Add a new product
+    Buy:        Buy an amount of a certain product
+    Sell:       Sell an amount of a certain product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Search:     Search for a product
+    LowStock:   Search for low stock products
+    Restock:    Restock a product
+    Quit:       Quit the program
+
+Please enter your choice: 
+Your input is blank!
+
+Please enter your choice: search
+Enter a search string here: Halo
+Searching for products with term: 'Halo'
+There are 1 products containing term
+ ID 660: Halo: Combat Evolved stock level: 230
+There are 2 products containing term
+ ID 661: Halo 1 stock level: 297
+There are 3 products containing term
+ ID 662: Halo 2 stock level: 0
+There are 4 products containing term
+ ID 663: Halo 3 stock level: 225
+No products found containing search term
+No products found containing search term
+No products found containing search term
+There are 5 products containing term
+ ID 667: Halo Infinite stock level: 189
+No products found containing search term
+No products found containing search term
+********************************
+  App21-04: Stock Application 
+      by Max Goodwin
+********************************
+
+    Add:        Add a new product
+    Buy:        Buy an amount of a certain product
+    Sell:       Sell an amount of a certain product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Search:     Search for a product
+    LowStock:   Search for low stock products
+    Restock:    Restock a product
+    Quit:       Quit the program
+
+Please enter your choice: lowstock
+Enter a minimum stock here: 
+300
+These products are at a low stock: 
+ ID 660: Halo: Combat Evolved stock level: 230
+ ID 661: Halo 1 stock level: 297
+ ID 662: Halo 2 stock level: 0
+ ID 663: Halo 3 stock level: 225
+ ID 665: Skyrim stock level: 160
+ ID 666: Elden Ring stock level: 172
+ ID 667: Halo Infinite stock level: 189
+ ID 669: Assasin's Creed Valhalla stock level: 80
+There are 8 products at a low stock
+********************************
+  App21-04: Stock Application 
+      by Max Goodwin
+********************************
+
+    Add:        Add a new product
+    Buy:        Buy an amount of a certain product
+    Sell:       Sell an amount of a certain product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Search:     Search for a product
+    LowStock:   Search for low stock products
+    Restock:    Restock a product
+    Quit:       Quit the program
+
+Please enter your choice: 
+Your input is blank!
+
+Please enter your choice: restock
+Enter a minimum stock to restock here: 
+300
+These products are at a low stock: 
+ ID 660: Halo: Combat Evolved stock level: 230
+ ID 661: Halo 1 stock level: 297
+ ID 662: Halo 2 stock level: 0
+ ID 663: Halo 3 stock level: 225
+ ID 665: Skyrim stock level: 160
+ ID 666: Elden Ring stock level: 172
+ ID 667: Halo Infinite stock level: 189
+ ID 669: Assasin's Creed Valhalla stock level: 80
+There are 8 products at a low stock
+Restocking products...
+********************************
+  App21-04: Stock Application 
+      by Max Goodwin
+********************************
+
+    Add:        Add a new product
+    Buy:        Buy an amount of a certain product
+    Sell:       Sell an amount of a certain product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Search:     Search for a product
+    LowStock:   Search for low stock products
+    Restock:    Restock a product
+    Quit:       Quit the program
+
+Please enter your choice: 
+Your input is blank!
+
+Please enter your choice: quit

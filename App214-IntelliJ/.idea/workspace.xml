@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f341d982-147a-46ad-ae22-e4dd760b7fbf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/InputReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/InputReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Program.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/StockApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/StockApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/StockDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/StockDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/StockList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/StockList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,6 +123,7 @@
       <workItem from="1639091634727" duration="22000" />
       <workItem from="1639091695672" duration="1859000" />
       <workItem from="1639132699307" duration="7483000" />
+      <workItem from="1639176973074" duration="1657000" />
     </task>
     <servers />
   </component>

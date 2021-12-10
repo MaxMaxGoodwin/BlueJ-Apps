@@ -1,0 +1,199 @@
+
+ ID 660: Halo: Combat Evolved stock level: 0
+ ID 661: Halo 1 stock level: 0
+ ID 662: Halo 2 stock level: 0
+ ID 663: Halo 3 stock level: 0
+ ID 664: Farcry 3 stock level: 0
+ ID 665: Skyrim stock level: 0
+ ID 666: Elden Ring stock level: 0
+ ID 667: Halo Infinite stock level: 0
+ ID 668: Farcry 6 stock level: 0
+ ID 669: Assasin's Creed Valhalla stock level: 0
+
+Successfully bought 473 of Halo: Combat Evolved
+Successfully bought 45 of Halo 1
+Successfully bought 253 of Halo 2
+Successfully bought 174 of Halo 3
+Successfully bought 333 of Farcry 3
+Successfully bought 337 of Skyrim
+Successfully bought 499 of Elden Ring
+Successfully bought 148 of Halo Infinite
+Successfully bought 403 of Farcry 6
+Successfully bought 226 of Assasin's Creed Valhalla
+
+ Max's Stock List
+ ====================
+
+ ID 660: Halo: Combat Evolved stock level: 473
+ ID 661: Halo 1 stock level: 45
+ ID 662: Halo 2 stock level: 253
+ ID 663: Halo 3 stock level: 174
+ ID 664: Farcry 3 stock level: 333
+ ID 665: Skyrim stock level: 337
+ ID 666: Elden Ring stock level: 499
+ ID 667: Halo Infinite stock level: 148
+ ID 668: Farcry 6 stock level: 403
+ ID 669: Assasin's Creed Valhalla stock level: 226
+
+Successfully sold 356 of Halo: Combat Evolved
+Can't sell 429 of Halo 1 - only 45 in stock
+Successfully sold 91 of Halo 2
+Can't sell 250 of Halo 3 - only 174 in stock
+Can't sell 498 of Farcry 3 - only 333 in stock
+Successfully sold 202 of Skyrim
+Successfully sold 216 of Elden Ring
+Can't sell 359 of Halo Infinite - only 148 in stock
+Can't sell 437 of Farcry 6 - only 403 in stock
+Can't sell 352 of Assasin's Creed Valhalla - only 226 in stock
+
+ Max's Stock List
+ ====================
+
+ ID 660: Halo: Combat Evolved stock level: 117
+ ID 661: Halo 1 stock level: 45
+ ID 662: Halo 2 stock level: 162
+ ID 663: Halo 3 stock level: 174
+ ID 664: Farcry 3 stock level: 333
+ ID 665: Skyrim stock level: 135
+ ID 666: Elden Ring stock level: 283
+ ID 667: Halo Infinite stock level: 148
+ ID 668: Farcry 6 stock level: 403
+ ID 669: Assasin's Creed Valhalla stock level: 226
+
+********************************
+  App21-04: Stock Application 
+      by Max Goodwin
+********************************
+
+    Add:        Add a new product
+    Buy:        Buy an amount of a certain product
+    Sell:       Sell an amount of a certain product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Search:     Search for a product
+    LowStock:   Search for low stock products
+    Restock:    Restock a product
+    Quit:       Quit the program
+
+Please enter your choice: print
+
+ Max's Stock List
+ ====================
+
+ ID 660: Halo: Combat Evolved stock level: 117
+ ID 661: Halo 1 stock level: 45
+ ID 662: Halo 2 stock level: 162
+ ID 663: Halo 3 stock level: 174
+ ID 664: Farcry 3 stock level: 333
+ ID 665: Skyrim stock level: 135
+ ID 666: Elden Ring stock level: 283
+ ID 667: Halo Infinite stock level: 148
+ ID 668: Farcry 6 stock level: 403
+ ID 669: Assasin's Creed Valhalla stock level: 226
+
+********************************
+  App21-04: Stock Application 
+      by Max Goodwin
+********************************
+
+    Add:        Add a new product
+    Buy:        Buy an amount of a certain product
+    Sell:       Sell an amount of a certain product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Search:     Search for a product
+    LowStock:   Search for low stock products
+    Restock:    Restock a product
+    Quit:       Quit the program
+
+Please enter your choice: add
+Please enter a product id: 
+412
+Please enter a product name: 
+Your input is blank!
+
+Please enter a product name: TestGame
+Product 412, TestGame has been added.
+********************************
+  App21-04: Stock Application 
+      by Max Goodwin
+********************************
+
+    Add:        Add a new product
+    Buy:        Buy an amount of a certain product
+    Sell:       Sell an amount of a certain product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Search:     Search for a product
+    LowStock:   Search for low stock products
+    Restock:    Restock a product
+    Quit:       Quit the program
+
+Please enter your choice: add
+Please enter a product id: 
+412
+Please enter a product name: 
+Your input is blank!
+
+Please enter a product name: TestGame2
+Product 412, TestGame2 has been added.
+********************************
+  App21-04: Stock Application 
+      by Max Goodwin
+********************************
+
+    Add:        Add a new product
+    Buy:        Buy an amount of a certain product
+    Sell:       Sell an amount of a certain product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Search:     Search for a product
+    LowStock:   Search for low stock products
+    Restock:    Restock a product
+    Quit:       Quit the program
+
+Please enter your choice: remove
+Enter a productID here to remove: 
+412
+Product 412 has been removed
+********************************
+  App21-04: Stock Application 
+      by Max Goodwin
+********************************
+
+    Add:        Add a new product
+    Buy:        Buy an amount of a certain product
+    Sell:       Sell an amount of a certain product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Search:     Search for a product
+    LowStock:   Search for low stock products
+    Restock:    Restock a product
+    Quit:       Quit the program
+
+Please enter your choice: 
+Your input is blank!
+
+Please enter your choice: remove
+Enter a productID here to remove: 
+500
+Couldn't find product
+********************************
+  App21-04: Stock Application 
+      by Max Goodwin
+********************************
+
+    Add:        Add a new product
+    Buy:        Buy an amount of a certain product
+    Sell:       Sell an amount of a certain product
+    Remove:     Remove an old product
+    Print:      Print all products
+    Search:     Search for a product
+    LowStock:   Search for low stock products
+    Restock:    Restock a product
+    Quit:       Quit the program
+
+Please enter your choice: 
+Your input is blank!
+
+Please enter your choice: quit

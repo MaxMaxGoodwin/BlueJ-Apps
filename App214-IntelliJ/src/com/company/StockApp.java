@@ -127,7 +127,7 @@ public class StockApp
         System.out.println();
         System.out.println("    Add:        Add a new product");
         System.out.println("    Buy:        Buy an amount of a certain product");
-        System.out.println("    Sell:       Selll an amount of a certain product");
+        System.out.println("    Sell:       Sell an amount of a certain product");
         System.out.println("    Remove:     Remove an old product");
         System.out.println("    Print:      Print all products");
         System.out.println("    Search:     Search for a product");

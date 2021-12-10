@@ -1,8 +1,9 @@
-    /**
+package com.company;
+/**
  * Model some details of a product sold by a company.
  * 
  * @author Max Goodwin
- * @version V3.0  03/12/2021
+ * @version V5.0  10/12/2021
  */
 public class Product
 {
