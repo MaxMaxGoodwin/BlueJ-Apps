@@ -73,9 +73,6 @@ Successfully bought 500 of Halo: Combat Evolved
     Restock:    Restock a product
     Quit:       Quit the program
 
-Please enter your choice: 
-Your input is blank!
-
 Please enter your choice: sell
 Enter a product ID to sell: 
 660
@@ -96,9 +93,6 @@ Successfully sold 450 of Halo: Combat Evolved
     LowStock:   Search for low stock products
     Restock:    Restock a product
     Quit:       Quit the program
-
-Please enter your choice: 
-Your input is blank!
 
 Please enter your choice: search
 Enter a search string here: Halo
@@ -161,9 +155,6 @@ There are 8 products at a low stock
     Restock:    Restock a product
     Quit:       Quit the program
 
-Please enter your choice: 
-Your input is blank!
-
 Please enter your choice: restock
 Enter a minimum stock to restock here: 
 300
@@ -193,7 +184,5 @@ Restocking products...
     Restock:    Restock a product
     Quit:       Quit the program
 
-Please enter your choice: 
-Your input is blank!
 
 Please enter your choice: quit

@@ -109,8 +109,6 @@ Please enter your choice: print
 Please enter your choice: add
 Please enter a product id: 
 412
-Please enter a product name: 
-Your input is blank!
 
 Please enter a product name: TestGame
 Product 412, TestGame has been added.
@@ -133,7 +131,6 @@ Please enter your choice: add
 Please enter a product id: 
 412
 Please enter a product name: 
-Your input is blank!
 
 Please enter a product name: TestGame2
 Product 412, TestGame2 has been added.
@@ -171,9 +168,6 @@ Product 412 has been removed
     Restock:    Restock a product
     Quit:       Quit the program
 
-Please enter your choice: 
-Your input is blank!
-
 Please enter your choice: remove
 Enter a productID here to remove: 
 500
@@ -192,8 +186,5 @@ Couldn't find product
     LowStock:   Search for low stock products
     Restock:    Restock a product
     Quit:       Quit the program
-
-Please enter your choice: 
-Your input is blank!
 
 Please enter your choice: quit
