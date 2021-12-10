@@ -6,9 +6,9 @@ import java.util.Scanner;
  * The text typed by a user is returned.
  * 
  * @author     Michael Kölling and David J. Barnes
- * @version    v3.0
+ * @version    v5.0
  * 
- * Modified by Max Goodwin   03/12/2021
+ * Modified by Max Goodwin   10/12/2021
  */
 public class InputReader
 {

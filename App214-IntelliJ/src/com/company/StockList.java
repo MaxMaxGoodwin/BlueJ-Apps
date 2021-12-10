@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * The stock is described by zero or more Products.
  * 
  * @author Max Goodwin
- * @version V3.0    03/12/2021
+ * @version V5.0    10/12/2021
  */
 public class StockList
 {
@@ -119,7 +119,7 @@ public class StockList
             else
             {
                 System.out.println("Can't sell " + amount +" of " + product.getName() 
-                + "- only " + product.getQuantity() + " in stock");
+                + " - only " + product.getQuantity() + " in stock");
             }
         }
         else
@@ -175,7 +175,7 @@ public class StockList
      * Method that asks user for a minimum stock then checks all stock levels
      * to see which products are below minimum and restocks them to minimum.
     */
-    /**
+
     public void restockLow(int minStock)
     {
         ArrayList<Product> lowStock = printLowStock(minStock);
@@ -183,16 +183,17 @@ public class StockList
         
         for(Product product : lowStock)
         {
-            product.increaseQuantity(minimum - product.getQuantity());
+            product.increaseQuantity(minStock - product.getQuantity());
         }
     }
-    */
+
    
    /**
     * Method that asks user for a minimum then checks stock levels and prints
     * the number of products below that stock level (doesn't restock).
+    * @return
     */
-   public void printLowStock(int minStock)
+   public ArrayList<Product> printLowStock(int minStock)
     {
         ArrayList<Product> lowStock = new ArrayList<Product>();
         int count = 0;
@@ -209,7 +210,7 @@ public class StockList
         }
         
         System.out.println("There are " + count + " products at a low stock");
-        //System.out.println("These products are: " + productID);
+        return lowStock;
     }
     
     
