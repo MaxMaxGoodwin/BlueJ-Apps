@@ -40,7 +40,9 @@ public class Map
         createPub();
         createOffice();
         createLab();
-
+        //Outside, S(O)>Main room, E(MR)>Delapidated Corridor, E(DC)>Dungeon,
+        //W(MR)>Instruction Room  S(MR)>Spider Nest, W(SN)>Boneyard, E(SN)>Camp,
+        //S(C)>Treasure room
         currentLocation = outside;  // start game outside
     }
     
