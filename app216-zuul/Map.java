@@ -9,13 +9,13 @@
  *          [Computer Lab]<---->[Office]
  *             
  * @author Derek Peacock and Nicholas Day
- * @version 2021-08-22
+ * @version 2.0    06/01/2022
  */
 public class Map
 {
     // Need to add a list of exits
     
-    private Location outside, theater, pub, lab, office;
+    private Location outside, main, instruction, spider, corridor, dungeon, camp, gravesite;
 
     private Location currentLocation;
 
@@ -36,70 +36,100 @@ public class Map
     private void createLocations()
     {
         createOutside();
-        createTheatre();
-        createPub();
-        createOffice();
-        createLab();
+        createMain();
+        createInstruction();
+        createSpider();
+        createCorridor();
+        createDungeon();
+        createCamp();
+        createGravesite();
         //Outside, S(O)>Main room, E(MR)>Delapidated Corridor, E(DC)>Dungeon,
         //W(MR)>Instruction Room  S(MR)>Spider Nest, W(SN)>Boneyard, E(SN)>Camp,
         //S(C)>Treasure room
         currentLocation = outside;  // start game outside
     }
     
-    /**
-     * Create the outside and link it to the
-     * theatre, lab and pub
-     */
-    private void createOutside()
+    public void createOutside()
     {
-        outside = new Location("outside the main entrance of the university");
+        outside = new Location("in a mystical bright green forest");
+        
+        outside.setExit("south", main);
+        main.setExit("north", outside);
+    }
+    
+    public void createMain()
+    {
+        main = new Location("in a large empty room that appears the be the main hall");
+    
+        main.setExit("north", outside);
+        outside.setExit("south", main);
+        
+        main.setExit("west", instruction);
+        instruction.setExit("east", main);
+        
+        main.setExit("south", spider);
+        spider.setExit("north", main);
+        
+        main.setExit("east", corridor);
+        corridor.setExit("west", main);
+    }
+    
+    public void createInstruction()
+    {
+        instruction = new Location("in a strange room with jumbled instructions scribbled on the walls about how to escape");
+        
+        instruction.setExit("east", main);
+        main.setExit("west", instruction);
+    }
+    
+    public void createSpider()
+    {
+        spider = new Location("in a room infested with spiders ravenous for your blood");
+        
+        spider.setExit("north", main);
+        main.setExit("south", spider);
+        
+        spider.setExit("east", camp);
+        camp.setExit("west", spider);
+        
+        spider.setExit("west", gravesite);
+        gravesite.setExit("east", spider);
+    }
+    
+    public void createCorridor()
+    {
+        corridor = new Location("in a dusty, cracked and ruined old stone corridor");
+        
+        corridor.setExit("west ", main);
+        main.setExit("east", corridor);
+        
+        corridor.setExit("east", dungeon);
+        dungeon.setExit("west", corridor);
         
     }
     
-    /**
-     * Create the pub and link it to the outside
-     */
-    private void createPub()
+    public void createDungeon()
     {
-        pub = new Location("in the campus pub");
+        dungeon = new Location("in an abandoned old dungeon coated in old blood stains");
         
-        pub.setExit("east", outside);
-        outside.setExit("west", pub);
+        dungeon.setExit("west", corridor);
+        corridor.setExit("east", dungeon);
     }
     
-    /**
-     * Create the theatre linked to the outside
-     */
-    private void createTheatre()
+    public void createCamp()
     {
-        theater = new Location("in a lecture theater");
+        camp = new Location("in a small room-makeshift-camp made of old rags and a fire that seems to burn forever");
         
-        theater.setExit("west", outside);
-        outside.setExit("east", theater);
+        camp.setExit("west", spider);
+        spider.setExit("east", camp);
     }
     
-    /**
-     * Create the office linked to the lab
-     */
-    private void createOffice()
+    public void createGravesite()
     {
-        office = new Location("in the computing admin office");
+        gravesite = new Location("in a dark damp room filled completely with skeletons");
         
-    }
-    
-    /**
-     * Create the lab and link it to the outside and office
-     */
-    private void createLab()
-    {
-        // create the Locations
-        lab = new Location("in a computing lab");
-        
-        lab.setExit("east", office);
-        office.setExit("west", lab);
-        
-        lab.setExit("north", outside);
-        outside.setExit("south", lab);
+        gravesite.setExit("east", spider);
+        spider.setExit("west", gravesite);
     }
     
     public Location getCurrentLocation()
