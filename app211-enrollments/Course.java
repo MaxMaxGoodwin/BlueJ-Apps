@@ -63,7 +63,9 @@ public class Course
         System.out.println("Module Credit: " + module.modCredit);
     }
     
-    //Method to add a new module to the course
+    /**
+     * Method to add a new module to the course.
+     */
     public void addModule(Module module)
     {
         this.module = module;

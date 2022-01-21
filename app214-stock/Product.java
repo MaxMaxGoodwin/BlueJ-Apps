@@ -1,4 +1,4 @@
-package com.company;
+ 
 /**
  * Model some details of a product sold by a company.
  * 
@@ -52,16 +52,25 @@ public class Product
         return quantity;
     }
 
+    /**
+     * Method to set the quantity of a product to the user's input.
+     */
     public void setQuantity(int quantity)
     {
         this.quantity = quantity;
     }
     
+    /**
+     * Method to increase the quantity by amount value.
+     */
     public void increaseQuantity(int amount)
     {
         quantity = quantity + amount;
     }
     
+    /**
+     * Method to decrease quantity by amount value.
+     */
     public void decreaseQuantity(int amount)
     {
         if(quantity >= amount)
@@ -76,7 +85,9 @@ public class Product
         return " ID " + id + ": " +  name + " stock level: " + quantity;
     }
 
-    
+    /**
+     * Method to print call 'toString' and print out ID, name and quantity.
+     */
     public void print()
     {
         System.out.println(toString());

@@ -55,7 +55,7 @@ public class Student
     
     /**
      * Find the module by the moduleCode and
-     * set its mark to the value
+     * set its mark to the value (NOT USED).
      */
     public void awardMark(String moduleCode, int value)
     {

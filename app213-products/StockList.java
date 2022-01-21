@@ -173,6 +173,8 @@ public class StockList
     /**
      * Method that asks user for a minimum stock then checks all stock levels
      * to see which products are below minimum and restocks them to minimum.
+     *                       
+     *                       DOES NOT WORK
     */
     /**
     public void restockLow(int minStock)

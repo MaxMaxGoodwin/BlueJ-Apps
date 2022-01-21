@@ -41,10 +41,9 @@ public class Course
         createModules();
     }
     
-    /** Method to print the list of
-     * enrolled students on a course
-     * for testing and practical purposes (doesn't work).
-     */
+    /** Method to print the list of enrolled students on a course for 
+     * testing and practical purposes.      (DOESN'T WORK). 
+     * 
     /**public void printEnrolList(Course course)
     {
         this.print();
@@ -53,9 +52,8 @@ public class Course
     }*/
    
     /**
-     * Create four modules and add them to the
-     * modules list for testing purposes.  These
-     * must be your four modules.
+     * Method to automatically create 4 modules and add them to the modules
+     * list for testing purposes.
      */
     public void createModules()
     {

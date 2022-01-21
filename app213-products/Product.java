@@ -50,17 +50,26 @@ public class Product
     {
         return quantity;
     }
-
+    
+    /**
+     * Method to set quantity to the user's input.
+     */
     public void setQuantity(int quantity)
     {
         this.quantity = quantity;
     }
     
+    /**
+     * Method to increase quantity by amount value.
+     */
     public void increaseQuantity(int amount)
     {
         quantity = quantity + amount;
     }
     
+    /**
+     * Method to decrease quantity by amount value.
+     */
     public void decreaseQuantity(int amount)
     {
         if(quantity >= amount)
@@ -75,7 +84,9 @@ public class Product
         return " ID " + id + ": " +  name + " stock level: " + quantity;
     }
 
-    
+    /**
+     * Method to call 'toString' and print out the ID, name and quantity.
+     */
     public void print()
     {
         System.out.println(toString());

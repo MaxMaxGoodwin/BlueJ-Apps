@@ -40,6 +40,9 @@ public class ModuleMark
         }
     }
     
+    /**
+     * Method that sets the value of mark to the user's input.
+     */
     public void setMark(int mark)
     {
         this.mark = mark;

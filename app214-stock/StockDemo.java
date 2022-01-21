@@ -41,11 +41,10 @@ public class StockDemo
     }
     
     /**
-     * Provide a demonstration of how the ProductList meets all
-     * the user requirements by making a delivery of each product 
-     * buying it in various amounts and then selling each
-     * product by various amounts. Make sure all the requirements
-     * have been demonstrated.
+     * A method to the run 'demo' by printing out stock, buying a random number
+     * of each product, printing out the stock again, selling a random
+     * number of each product and printing a final time to see if the program
+     * works properly. 
      */
     public void runDemo()
     {
@@ -60,12 +59,18 @@ public class StockDemo
         stock.print();        
     }
     
+    /**
+     * A method to buy a random number of each product.
+     */
     private void buyProducts()
     {
         for(int id = 660; id <= 669; id++)
             stock.buyProduct(id, random.nextInt(501));
     }
-
+    
+    /**
+     * A method to sell a random number of each product.
+     */
     private void sellProducts()
     {
         for(int id = 660; id <= 669; id++)

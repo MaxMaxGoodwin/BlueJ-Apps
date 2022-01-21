@@ -15,8 +15,9 @@ public class StockDemo
     private Random random;
 
     /**
-     * Create a StockManager and populate it with at least
-     * 10 sample products.
+     * An automated method that adds 10 products to the stock so that
+     * when the demo is run the user does not need to input 10
+     * different products. (Testing purposes).
      */
     public StockDemo()
     {
@@ -40,11 +41,10 @@ public class StockDemo
     }
     
     /**
-     * Provide a demonstration of how the ProductList meets all
-     * the user requirements by making a delivery of each product 
-     * buying it in various amounts and then selling each
-     * product by various amounts. Make sure all the requirements
-     * have been demonstrated.
+     * A method that runs a 'demo' by printing out the available stock,
+     * buying a random number of stock, printing again, selling a random
+     * number of stock and printing a final time to show that the program
+     * works properly.
      */
     public void runDemo()
     {
@@ -59,12 +59,18 @@ public class StockDemo
         stock.print();        
     }
     
+    /**
+     * A method to purchase a random number of each product.
+     */
     private void buyProducts()
     {
         for(int id = 660; id <= 669; id++)
             stock.buyProduct(id, random.nextInt(501));
     }
 
+    /**
+     * A method to sell a random number of each product.
+     */
     private void sellProducts()
     {
         for(int id = 660; id <= 669; id++)

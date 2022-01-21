@@ -41,6 +41,9 @@ public class Student
         return id;
     }
 
+    /**
+     * Method to enrol a student on a course of the user's choice (input).
+     */
     public void enrol(Course course)
     {
         this.course = course;
@@ -54,7 +57,9 @@ public class Student
         System.out.println(" Student ID: " + id + " Name: " + name);
     }
     
-    //Prints out the course details
+    /**
+     * Prints out al,l of the course details.
+     */
     public void printCourse()
     {
         System.out.println(course);

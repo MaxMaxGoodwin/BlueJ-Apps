@@ -21,25 +21,33 @@ public class Module
     //Assigns a variable for module credit as an integer
     public int modCredit;
     
-    //Method which asks the user to input the value of module code
+    /**
+     * Method which asks the user to input the value of module code
+     */
     public void getModCode(String moduleCode)
     {
         this.moduleCode = moduleCode;
     }
     
-    //Method which asks the user to input the string value of title
+    /**
+     * Method which asks the user to input the string value of title
+     */
     public void getTitle(String title)
     {
         this.title = title;
     }
     
-    //Method which asks the user to input the value of credit value
+    /**
+     * Method which asks the user to input the value of credit value
+     */
     public void getCredValue(int creditValue)
     {
         this.creditValue = creditValue;
     }
     
-    //Method which asks for user input to get value of module credit
+    /**
+     * Method which asks for user input to get value of module credit
+     */
     public void getModCred(int modCredit)
     {
         this.modCredit = modCredit;

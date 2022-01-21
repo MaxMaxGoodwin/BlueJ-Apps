@@ -17,6 +17,9 @@ public enum Grades
     
     private final int value;
     
+    /**
+     * Sets the value of grades to the user's input.
+     */
     private Grades(int value)
     {
         this.value = value;
