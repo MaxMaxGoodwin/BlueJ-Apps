@@ -52,7 +52,7 @@ public class Map
     /**
      * Creates the location for Outside and sets the exits.
      */
-    public void createOutside()
+    private void createOutside()
     {
         outside = new Location("in a mystical bright green forest");
         
@@ -63,7 +63,7 @@ public class Map
     /**
      * Creates the location for Main Room and sets the exits.
      */
-    public void createMain()
+    private void createMain()
     {
         main = new Location("in a large empty room that appears the be the main hall");
     
@@ -83,7 +83,7 @@ public class Map
     /**
      * Creates the location for Instruction Room and exits.
      */
-    public void createInstruction()
+    private void createInstruction()
     {
         instruction = new Location("in a strange room with jumbled instructions scribbled on the walls about how to escape");
         
@@ -94,7 +94,7 @@ public class Map
     /**
      * Creates the location for Spider Nest and exits.
      */
-    public void createSpider()
+    private void createSpider()
     {
         spider = new Location("in a room infested with spiders ravenous for your blood");
         
@@ -111,7 +111,7 @@ public class Map
     /**
      * Creates the location for Corridor and sets the exits.
      */
-    public void createCorridor()
+    private void createCorridor()
     {
         corridor = new Location("in a dusty, cracked and ruined old stone corridor");
         
@@ -126,7 +126,7 @@ public class Map
     /**
      * Creates the location for Dungeon and sets the exits.
      */
-    public void createDungeon()
+    private void createDungeon()
     {
         dungeon = new Location("in an abandoned old dungeon coated in old blood stains");
         
@@ -137,7 +137,7 @@ public class Map
     /**
      * Creates the location for Camp and sets the exits.
      */
-    public void createCamp()
+    private void createCamp()
     {
         camp = new Location("in a small room-makeshift-camp made of old rags and a fire that seems to burn forever");
         
@@ -148,7 +148,7 @@ public class Map
     /**
      * Creates the location for Gravesite and sets the exits.
      */
-    public void createGravesite()
+    private void createGravesite()
     {
         gravesite = new Location("in a dark damp room filled completely with skeletons");
         
