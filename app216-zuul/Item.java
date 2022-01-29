@@ -19,6 +19,11 @@ public class Item
         this.id = id;
     }
     
+    public String getItemName()
+    {
+        return name;
+    }
+    
     public void getShortDescription()
     {
         System.out.println(name);

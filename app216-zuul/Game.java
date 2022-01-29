@@ -47,7 +47,7 @@ public class Game
             gameOver = reader.getCommand();
         }
         
-        System.out.println("Thank you for playing.  Good bye.");
+        System.out.println("Thank you for playing.  Hope you come back soon.");
     }
 
     /**
@@ -56,8 +56,8 @@ public class Game
     private void printWelcome()
     {
         System.out.println();
-        System.out.println(" Welcome to the World of Zuul!");
-        System.out.println(" World of Zuul is a new, incredibly boring adventure game.");
+        System.out.println(" Welcome to this random game!");
+        System.out.println(" You are stuck in a strange world with no apparent way out.");
         System.out.println(" Type 'help' if you need help.");
         System.out.println();
         System.out.println(MAP.getCurrentLocation().getLongDescription());

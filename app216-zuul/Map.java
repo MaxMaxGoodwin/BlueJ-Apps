@@ -9,7 +9,7 @@
  *          [Computer Lab]<---->[Office]
  *             
  * @author Derek Peacock and Nicholas Day
- * @version 3.0    07/01/2022
+ * @version 4.0    28/01/2022
  */
 public class Map
 {
@@ -30,19 +30,25 @@ public class Map
     /**
      * Create all the Locations and link their exits together.
      * Set the current location to the outside.
-     * Both locations need to have been created before
-     * their exists are linked.
      */
     private void createLocations()
     {
-        createOutside();
-        createMain();
-        createInstruction();
-        createSpider();
-        createCorridor();
-        createDungeon();
-        createCamp();
-        createGravesite();
+        outside = new Location("in a mystical bright green forest");
+        main = new Location("in a large empty room that appears the be the main hall");
+        instruction = new Location("in a strange room with jumbled instructions scribbled on the walls about how to escape");
+        spider = new Location("in a room infested with spiders ravenous for your blood");
+        corridor = new Location("in a dusty, cracked and ruined old stone corridor");
+        dungeon = new Location("in an abandoned old dungeon coated in old blood stains");
+        camp = new Location("in a small room-makeshift-camp made of old rags and a fire that seems to burn forever");
+        gravesite = new Location("in a dark damp room filled completely with skeletons");
+        setExitOutside();
+        setExitMain();
+        setExitInstruction();
+        setExitSpider();
+        setExitGravesite();
+        setExitCamp();
+        setExitCorridor();
+        setExitDungeon();
         //Outside, S(O)>Main room, E(MR)>Delapidated Corridor, E(DC)>Dungeon,
         //W(MR)>Instruction Room  S(MR)>Spider Nest, W(SN)>Boneyard, E(SN)>Camp,
         //S(C)>Treasure room
@@ -50,23 +56,19 @@ public class Map
     }
     
     /**
-     * Creates the location for Outside and sets the exits.
+     * Creates the exits for Outside.
      */
-    private void createOutside()
+    private void setExitOutside()
     {
-        outside = new Location("in a mystical bright green forest");
-        
         outside.setExit("south", main);
         main.setExit("north", outside);
     }
     
     /**
-     * Creates the location for Main Room and sets the exits.
+     * Creates the exits for Main Room.
      */
-    private void createMain()
+    private void setExitMain()
     {
-        main = new Location("in a large empty room that appears the be the main hall");
-    
         main.setExit("north", outside);
         outside.setExit("south", main);
         
@@ -81,23 +83,19 @@ public class Map
     }
     
     /**
-     * Creates the location for Instruction Room and exits.
+     * Creates the exits for Instruction Room.
      */
-    private void createInstruction()
+    private void setExitInstruction()
     {
-        instruction = new Location("in a strange room with jumbled instructions scribbled on the walls about how to escape");
-        
         instruction.setExit("east", main);
         main.setExit("west", instruction);
     }
     
     /**
-     * Creates the location for Spider Nest and exits.
+     * Creates the exits for Spider Nest.
      */
-    private void createSpider()
+    private void setExitSpider()
     {
-        spider = new Location("in a room infested with spiders ravenous for your blood");
-        
         spider.setExit("north", main);
         main.setExit("south", spider);
         
@@ -109,51 +107,46 @@ public class Map
     }
     
     /**
-     * Creates the location for Corridor and sets the exits.
+     * Creates the exits for Corridor.
      */
-    private void createCorridor()
+    private void setExitCorridor()
     {
-        corridor = new Location("in a dusty, cracked and ruined old stone corridor");
-        
         corridor.setExit("west ", main);
         main.setExit("east", corridor);
         
         corridor.setExit("east", dungeon);
         dungeon.setExit("west", corridor);
-        
     }
     
     /**
-     * Creates the location for Dungeon and sets the exits.
+     * Creates the exits for Dungeon.
      */
-    private void createDungeon()
-    {
-        dungeon = new Location("in an abandoned old dungeon coated in old blood stains");
-        
+    private void setExitDungeon()
+    {        
         dungeon.setExit("west", corridor);
         corridor.setExit("east", dungeon);
     }
     
     /**
-     * Creates the location for Camp and sets the exits.
+     * Creates the exits for Camp.
      */
-    private void createCamp()
+    private void setExitCamp()
     {
-        camp = new Location("in a small room-makeshift-camp made of old rags and a fire that seems to burn forever");
-        
         camp.setExit("west", spider);
         spider.setExit("east", camp);
+        
+        camp.setItem(new Item("Key", "What could this old key be for?", 100));
     }
     
     /**
-     * Creates the location for Gravesite and sets the exits.
+     * Creates the exits for Gravesite.
      */
-    private void createGravesite()
+    private void setExitGravesite()
     {
-        gravesite = new Location("in a dark damp room filled completely with skeletons");
-        
         gravesite.setExit("east", spider);
         spider.setExit("west", gravesite);
+        
+        gravesite.setItem(new Item("Hammer", "This hammer could come in handy", 101));
     }
     
     public Location getCurrentLocation()

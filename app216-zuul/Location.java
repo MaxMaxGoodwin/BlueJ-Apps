@@ -21,7 +21,9 @@ public class Location
 {
     private String description;
     private HashMap<String, Location> exits;        // stores exits of this room.
-
+    private Item item;
+    //private HashMap<String, Item> items; //for 'addItem' but not implemented/necessary
+    
     /**
      * Create a location described "description". Initially, it has
      * no exits. "description" is something like "a kitchen" or
@@ -31,6 +33,7 @@ public class Location
     {
         this.description = description;
         exits = new HashMap<>();
+        //items = new HashMap<>();
     }
 
     /**
@@ -41,6 +44,11 @@ public class Location
     public void setExit(String direction, Location neighbor) 
     {
         exits.put(direction, neighbor);
+    }
+    
+    public void setItem(Item item)
+    {
+        this.item = item;
     }
 
     /**
@@ -60,7 +68,7 @@ public class Location
      */
     public String getLongDescription()
     {
-        return " You are " + description + ".\n" + getExitString();
+        return " You are " + description + ".\n" + getExitString() + "\n" + getItemString();
     }
 
     /**
@@ -79,6 +87,17 @@ public class Location
         return returnString;
     }
 
+    private String getItemString()
+    {
+        if (item != null)
+        {
+            String returnString = "Items Availabe: ";
+            returnString += item.getItemName() + " ";
+            return returnString;
+        }
+        return " Which direction do you wish to travel? ";
+    }
+    
     /**
      * Return the room that is reached if we go from this room in direction
      * "direction". If there is no room in that direction, return null.
